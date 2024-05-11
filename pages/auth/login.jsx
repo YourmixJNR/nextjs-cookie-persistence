@@ -27,6 +27,7 @@ const Login = () => {
       password,
     });
     console.log(data)
+    clearFormState()
   };
 
   function clearFormState() {
