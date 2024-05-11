@@ -1,4 +1,5 @@
 import useClientApi from "@/libs/useClientApi";
+import Link from "next/link";
 import React from "react";
 import { useState } from "react";
 
@@ -26,8 +27,8 @@ const Login = () => {
       email,
       password,
     });
-    console.log(data)
-    clearFormState()
+    console.log(data);
+    clearFormState();
   };
 
   function clearFormState() {
@@ -58,6 +59,7 @@ const Login = () => {
           Sign In
         </button>
       </form>
+      <Link href={"/user"}>Go to userPage</Link>
     </div>
   );
 };
