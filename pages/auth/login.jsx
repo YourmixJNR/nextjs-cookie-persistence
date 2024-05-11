@@ -1,3 +1,4 @@
+import useClientApi from "@/libs/useClientApi";
 import React from "react";
 import { useState } from "react";
 
@@ -13,7 +14,7 @@ const login = () => {
     setPassword(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     // check the format of the email using a regular expression
@@ -21,6 +22,11 @@ const login = () => {
     if (!emailRegex.test(email)) {
       return;
     }
+    const { data } = await useClientApi.post("/auth/login", {
+      email,
+      password,
+    });
+    console.log(data)
   };
 
   function clearFormState() {
