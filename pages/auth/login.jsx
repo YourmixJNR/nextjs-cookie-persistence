@@ -23,11 +23,15 @@ const Login = () => {
     if (!emailRegex.test(email)) {
       return;
     }
-    const { data } = await useClientApi.post("/auth/login", {
-      email,
-      password,
-    });
-    console.log(data);
+    try {
+      const { data } = await useClientApi.post("/auth/login", {
+        email,
+        password,
+      });
+      console.log(data);
+    } catch (err) {
+      console.log(err);
+    }
     clearFormState();
   };
 
