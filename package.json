@@ -1,5 +1,5 @@
 {
-  "name": "cookie-test",
+  "name": "nextjs-cookie-persistence",
   "version": "0.1.0",
   "private": true,
   "scripts": {

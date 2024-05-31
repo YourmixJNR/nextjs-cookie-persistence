@@ -1,38 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Cookie Persistence Testing in Next.js Production Environment
 
-## Getting Started
+## Overview
 
-First, run the development server:
+Exploring and troubleshooting the behavior of cookies in a Next.js application when deployed in a production setting. I've noticed that cookies set from an external API do not persist in the browser under production conditions, unlike in the development environment.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Objective
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+My primary goal is to uncover and rectify the underlying issue that prevents cookie persistence in the production phase of a Next.js application. Ensuring consistent cookie handling across different deployment stages is crucial for the functionality of web applications.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Current Issue
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+The core challenge I'm facing involves cookies not being saved or stored in the browser when the application operates in the production environment. This behavior contrasts sharply with the development environment, where cookies function as intended.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Seeking Community Help
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+To tackle this problem, I've reached out to the developer community on [Stack Overflow](https://stackoverflow.com/questions/78561658/next-js-cannot-save-cookies-in-the-browser-sent-from-express-js-backend-in-pro) with a comprehensive question detailing my findings and the specific issue at hand. I believe that sharing my experience and challenges here could also serve as a valuable resource for others facing similar difficulties.
 
-## Learn More
+## Contribution Guidelines
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+As an individual contributor, I welcome any advice, suggestions, or solutions from fellow developers who have dealt with similar cookie management issues in Next.js, particularly in production environments. Please visit my [Stack Overflow Question](https://stackoverflow.com/questions/78561658/next-js-cannot-save-cookies-in-the-browser-sent-from-express-js-backend-in-pro) to offer your insights, experiences, or potential fixes. Your input is invaluable to resolving this issue and enhancing the reliability of web applications.
